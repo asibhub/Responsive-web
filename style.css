@@ -56,6 +56,12 @@ html {
   color: rgb(184, 79, 4);
   transition: 1s;
 }
+#bar {
+  color: rgb(184, 79, 4);
+  padding-left: 30px;
+  font-size: 1.5rem;
+  display: none;
+}
 
 /* Header section  */
 .header {
@@ -64,6 +70,7 @@ html {
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 .header .wrapper {
   display: flex;
@@ -113,7 +120,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem 15rem;
+  padding: 5rem 12rem;
   background-color: rgba(1, 4, 16, 0.958);
 }
 
@@ -169,7 +176,7 @@ html {
 .trainer {
   width: 100%;
   background-color: whitesmoke;
-  padding: 4rem 8rem;
+  padding: 4rem 6rem;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -315,4 +322,216 @@ footer {
 footer .foot p {
   text-align: center;
   margin-top: 10px;
+}
+
+/* Media Quaries For responsive */
+
+/* For large Device */
+@media screen and (max-width: 1092px) {
+  .nav #items li {
+    padding-left: 30px;
+  }
+  .nav #items .icon a i {
+    padding-left: 30px;
+  }
+  .header .wrapper h1 {
+    font-size: 3rem;
+    padding: 1rem 9rem;
+    text-align: center;
+  }
+  .details {
+    padding: 5rem 10rem;
+  }
+  .details .right h1 {
+    font-size: 2.5rem;
+  }
+}
+
+/* For Medium  Device */
+@media screen and (max-width: 991px) {
+  .nav {
+    padding: 1.5rem 4rem;
+  }
+  .nav #items {
+    text-align: center;
+    flex-direction: column;
+    width: 300px;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 100000;
+    margin-top: 5rem;
+    transition: 1s;
+  }
+  .nav #items li {
+    padding-left: 0px;
+    padding: 10px 0px;
+  }
+  .nav #items li a {
+    font-size: 1.2rem;
+  }
+  .nav #items .icon a i {
+    padding-left: 0px;
+    padding: 10px 20px;
+    font-size: 1.3rem;
+  }
+  #bar {
+    color: rgb(184, 79, 4);
+    padding-left: 30px;
+    font-size: 1.5rem;
+    display: initial;
+    cursor: pointer;
+  }
+
+  .header .wrapper h1 {
+    font-size: 3rem;
+    padding: 1rem 7rem;
+  }
+  .header .wrapper .get a {
+    padding: 8px;
+  }
+  .header .wrapper .get .learn {
+    color: rgb(184, 79, 4);
+    padding: 8px 10px;
+  }
+
+  .details {
+    padding: 4rem 6rem;
+  }
+
+  .details .left {
+    width: 48%;
+  }
+  .details .left h1 {
+    font-size: 2.5rem;
+  }
+
+  .left a:hover {
+    background-color: white;
+    color: rgb(184, 79, 4);
+    transition: 1s;
+  }
+  .details .right {
+    width: 48%;
+  }
+  .details .right h1 {
+    font-size: 2.5rem;
+  }
+
+  .trainer {
+    padding: 4rem 4rem;
+  }
+  .intro {
+    width: 32%;
+  }
+  .instractor {
+    width: 64%;
+  }
+  .instractor .team img {
+    height: 300px;
+  }
+
+  .classes {
+    padding: 4rem 4rem;
+  }
+  .classes .getclass p {
+    color: grey;
+  }
+  .classes .team2 .team3 {
+    width: 32%;
+  }
+  .classes .team2 .team3 .pic img {
+    height: 250px;
+  }
+  .classes .team2 .team3 .info .course h4 {
+    background-color: red;
+    padding: 0.8rem;
+  }
+
+  .contact {
+    padding: 4rem 4rem;
+  }
+}
+/* For Tablet Landscape Device */
+@media screen and (max-width: 768px) {
+  .nav {
+    padding: 1.5rem 4rem;
+  }
+  .nav h2 {
+    padding: 1px 3px;
+  }
+  .nav #items {
+    text-align: center;
+    flex-direction: column;
+    width: 300px;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 100000;
+    margin-top: 5rem;
+    transition: 1s;
+  }
+
+  .header .wrapper h1 {
+    font-size: 2rem;
+    padding: 1rem 6rem;
+  }
+  .header .wrapper .get a {
+    padding: 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 1.3rem;
+  }
+  .header .wrapper .get .learn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .details {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 6rem;
+  }
+
+  .details .left {
+    width: 100%;
+  }
+  .details .left h1 {
+    font-size: 2rem;
+  }
+
+  .details .left a {
+    font-size: 1.2rem;
+    padding: 15px 10px;
+  }
+
+  .details .right {
+    width: 100%;
+    border-left: 0px;
+    padding-left: 0px;
+    margin-top: 30px;
+    border-top: 2px solid grey;
+  }
+  .details .right h1 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 30px;
+  }
+  .details .right h4 {
+    color: white;
+  }
+  .details .right p {
+    color: grey;
+  }
+}
+/* For Mobile Device */
+@media screen and (max-width: 496px) {
 }
