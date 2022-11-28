@@ -19,6 +19,8 @@
       integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
       crossorigin="anonymous"
     />
+    <!-- Animation Aos Link  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>GYMNAST</title>
   </head>
   <body>
@@ -29,10 +31,11 @@
       </div>
       <div>
         <ul id="items">
-          <li><a href="">Home</a></li>
-          <li><a href="">About Us</a></li>
-          <li><a href="">Classes</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#detais">About Us</a></li>
+          <li><a href="#class">Classes</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#intro">Intro</a></li>
           <div class="icon">
             <a href=""
               ><i class="fa fa-facebook-official" aria-hidden="true"></i>
@@ -51,7 +54,7 @@
     <!-- Here is end of Nav  -->
 
     <!-- Start Header  -->
-    <header class="header">
+    <header id="home" class="header" data-aos="zoom-in">
       <div class="wrapper">
         <p>Upgrade yourself Go the GYM...</p>
         <h1>All progress takes place outside the comfort zone</h1>
@@ -64,8 +67,8 @@
     <!-- End Of the header  -->
 
     <!-- started details section -->
-    <section class="details">
-      <div class="left">
+    <section class="details" id="detais">
+      <div class="left" data-aos="flip-left">
         <h1>New To GYMNAST?</h1>
         <br />
         <h4>Your new membership is up to 2 months Free ($60.00 per Month)</h4>
@@ -77,7 +80,7 @@
         <br />
         <a href="">Become a Member Today</a>
       </div>
-      <div class="right">
+      <div class="right" data-aos="flip-right">
         <h1>Working Hour</h1>
         <br /><br />
         <h4>Friday:Closed</h4>
@@ -91,8 +94,8 @@
     <!-- End of details  -->
 
     <!-- Here started trainer Section  -->
-    <section class="trainer">
-      <div class="intro">
+    <section class="trainer" id="intro">
+      <div class="intro" data-aos="fade-up">
         <h1>Welcome To GYMNAST</h1>
         <br />
         <p>
@@ -109,7 +112,7 @@
         </p>
       </div>
       <div class="instractor">
-        <div class="team">
+        <div class="team" data-aos="flip-left">
           <div class="picture">
             <img src="./Images/y1.jpg" alt="" />
           </div>
@@ -126,7 +129,7 @@
           </div>
         </div>
 
-        <div class="team">
+        <div class="team" data-aos="flip-right">
           <div class="picture">
             <img src="./Images/i.jpg" alt="" />
           </div>
@@ -147,14 +150,14 @@
     <!-- End trainer  -->
 
     <!-- Here started classes section  -->
-    <section class="classes">
+    <section class="classes" id="class">
       <div class="getclass">
         <p>Get a perfect body</p>
         <br />
         <h1>Join Our Class</h1>
       </div>
       <div class="team2">
-        <div class="team3">
+        <div class="team3" data-aos="fade-up">
           <div class="pic">
             <img src="/Images/y2.jpg" alt="" />
           </div>
@@ -175,7 +178,7 @@
             </p>
           </div>
         </div>
-        <div class="team3">
+        <div class="team3" data-aos="fade-down">
           <div class="pic">
             <img src="/Images/c.jpg" alt="" />
           </div>
@@ -196,7 +199,7 @@
             </p>
           </div>
         </div>
-        <div class="team3">
+        <div class="team3" data-aos="fade-up">
           <div class="pic">
             <img src="/Images/d.jpg" alt="" />
           </div>
@@ -222,9 +225,9 @@
     <!-- End  -->
 
     <!-- Contact  -->
-    <section class="contact">
+    <section class="contact" id="contact">
       <div class="contacForm">
-        <div class="form">
+        <div class="form" data-aos="fade-up">
           <h1>Ask me Any Question??</h1>
           <br />
           <input type="text" placeholder="Name" /><br />
@@ -233,7 +236,7 @@
           <button>Submit Here</button>
         </div>
       </div>
-      <div class="map">
+      <div class="map" data-aos="fade-up">
         <h1>You Can Find us Here...</h1>
         <br />
         <i class="fa fa-map-marker" aria-hidden="true"></i>
@@ -268,5 +271,14 @@
 
     <!-- jsvascript for menu responsive -->
     <script src="script.js"></script>
+
+    <!-- Aos Animation Link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 2000,
+      });
+    </script>
   </body>
 </html>

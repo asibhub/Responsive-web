@@ -531,7 +531,189 @@ footer .foot p {
   .details .right p {
     color: grey;
   }
+
+  /* Trainer Section  */
+  .trainer {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro {
+    width: 100%;
+  }
+  .instractor {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .instractor .team {
+    width: 48%;
+  }
+  .instractor .team img {
+    height: 300px;
+  }
+  .instractor .team .teamDetails {
+    padding: 0.5rem;
+  }
+  .instractor .team .teamDetails h2 {
+    font-size: 24px;
+  }
+
+  .classes {
+    padding: 2rem 4rem;
+  }
+  .classes .getclass h1 {
+    font-size: 1.5rem;
+  }
+  .classes .team2 {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .classes .team2 .team3 {
+    width: 100%;
+    margin-top: 30px;
+  }
+  .classes .team2 .team3 .pic img {
+    height: 500px;
+  }
+  .classes .team2 .team3 .info {
+    padding: 8px 12px;
+  }
+
+  .contact {
+    width: 100%;
+    padding: 2rem 4rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact .contacForm {
+    width: 100%;
+  }
+  .contact .contacForm .form input,
+  textarea {
+    width: 100%;
+    padding: 10px 6px;
+    margin: 7px 0px;
+  }
+  .contact .contacForm .form button {
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    font-size: 2rem;
+  }
+  .contact .map {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  footer {
+    padding: 2rem;
+  }
 }
 /* For Mobile Device */
 @media screen and (max-width: 496px) {
+  .nav {
+    padding: 1rem 2rem;
+  }
+  .nav #items {
+    text-align: center;
+    flex-direction: column;
+    width: 300px;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 100000;
+    margin-top: 5rem;
+    transition: 1s;
+  }
+
+  .header .wrapper h1 {
+    font-size: 2rem;
+    padding: 1rem 4rem;
+  }
+  .header .wrapper .get a {
+    padding: 5px;
+    text-decoration: none;
+    color: grey;
+    font-size: 1rem;
+  }
+  .details {
+    padding: 4rem 3rem;
+  }
+
+  .details .left h1 {
+    font-size: 1.5rem;
+  }
+
+  .details .left a {
+    font-size: 1rem;
+    padding: 15px 10px;
+  }
+
+  .details .right {
+    width: 100%;
+    border-left: 0px;
+    padding-left: 0px;
+    margin-top: 30px;
+    border-top: 2px solid grey;
+  }
+  .details .right h1 {
+    color: white;
+    font-size: 1.5rem;
+    margin-top: 30px;
+  }
+
+  .trainer {
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 3rem 3rem;
+  }
+  .instractor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .instractor .team {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .classes {
+    padding: 2rem 3rem;
+  }
+
+  .classes .team2 .team3 .pic img {
+    height: 400px;
+  }
+
+  .contact {
+    padding: 2rem 3rem;
+  }
+  .contact .contacForm .form button {
+    font-size: 1.5rem;
+  }
+  .contact .contacForm h1 {
+    font-size: 1.3rem;
+  }
+  .contact .map h1 {
+    font-size: 1.3rem;
+  }
+
+  footer {
+    padding: 1rem;
+  }
 }
